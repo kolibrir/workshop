@@ -1,6 +1,5 @@
 # Merging
-
-## Merge single file(s)
+##Merge single file(s)
 
 ```
 $ git checkout <local-branch-name> <file-path>
