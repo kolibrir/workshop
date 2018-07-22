@@ -55,89 +55,8 @@ To remove a tracked file from git but not from the local file system use
 git rm --cached <filename>
 ```
 
-# Merging
 
-## Merge single file(s)
 
-```
-$ git checkout <local-branch-name> <file-path>
-```
-
-## Undo a merge
-
-[StackOverflow post](http://stackoverflow.com/a/2389423/50109)
-
-```
-git reset --hard commit_sha
-```
-
-or simply
-
-```
-git reset --hard origin/HEAD
-```
-
-to reset to the last remote commit. **Attention**, undo obviously only local merges.
-
-# Update from original repo
-
-```
-$ git remote add upstream <org_git_url>
-```
-
-Then you can fetch it normally through
-
-```
-$ git pull upstream <branch>
-```
-
-# Branches
-
-Docs: [http://gitref.org/branching/](http://gitref.org/branching/)
-
-## List all branches
-
-```
-$ git branch -v
-```
-
-## Create Branch
-
-Checks out a branch and automatically switches to it.
-
-```
-$ git checkout -b <new-branch-name>
-```
-
-## Download a remote branch
-```
-$ git checkout -b local-branch-name origin/remote-branch-name
-```
-
-## Publish a local branch
-
-```
-$ git push -u origin <local-branch-name>
-```
-
-## Delete local branch
-
-```
-$ git branch -D bugfix
-```
-
-## Delete remote branch
-
-```
-$ git push origin :<remote-branch-name>
-```
-
-## Delete tags
-
-### Local tags
-```
-git tag -l | xargs git tag -d
-```
 
 ### Remote tags
 

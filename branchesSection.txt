@@ -1,0 +1,47 @@
+# Branches
+
+Docs: [http://gitref.org/branching/](http://gitref.org/branching/)
+
+## List all branches
+
+```
+$ git branch -v
+```
+
+## Create Branch
+
+Checks out a branch and automatically switches to it.
+
+```
+$ git checkout -b <new-branch-name>
+```
+
+## Download a remote branch
+```
+$ git checkout -b local-branch-name origin/remote-branch-name
+```
+
+## Publish a local branch
+
+```
+$ git push -u origin <local-branch-name>
+```
+
+## Delete local branch
+
+```
+$ git branch -D bugfix
+```
+
+## Delete remote branch
+
+```
+$ git push origin :<remote-branch-name>
+```
+
+## Delete tags
+
+### Local tags
+```
+git tag -l | xargs git tag -d
+```
