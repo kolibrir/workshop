@@ -5,9 +5,6 @@
 $ git checkout <local-branch-name> <file-path>
 ```
 
-## Undo a merge
-
-[StackOverflow post](http://stackoverflow.com/a/2389423/50109)
 
 ```
 git reset --hard commit_sha
