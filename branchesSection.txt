@@ -1,6 +1,5 @@
 # Branches
 
-Docs: [http://gitref.org/branching/](http://gitref.org/branching/)
 
 ## List all branches
 
